@@ -39,6 +39,10 @@ function update () {
     {
         bala = game.add.sprite(mainCharacter.x-60 , mainCharacter.y+4, 'bala');
     }
+    else if (game.input.keyboard.isDown(32))
+    {
+      game.physics.arcade.moveToXY(mainCharacter, mainCharacter.x, mainCharacter.position.y - 200, 200);
+    }
     else
     {
       mainCharacter.body.velocity.set(0);
