@@ -1,7 +1,7 @@
 var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
 
 function preload() {
-    game.load.baseURL = 'https://aaronrp1998.github.io/YoungMan/proyecto/src'
+    game.load.baseURL = 'https://aaronrp1998.github.io/YoungMan/proyecto/src/'
     game.load.crossOrigin = 'anonymus';
     game.load.image('background', 'images/background.png');
     game.load.image('mainCharacter', 'images/megaman.png');
