@@ -1,13 +1,8 @@
 var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
 
 function preload() {
-
-    //  You can fill the preloader with as many assets as your game requires
-
-    //  Here we are loading an image. The first parameter is the unique
-    //  string by which we'll identify the image later in our code.
-
-    //  The second parameter is the URL of the image (relative)
+    game.load.baseURL = 'https://aaronrp1998.github.io/YoungMan/proyecto/src'
+    game.load.crossOrigin = 'anonymus';
     game.load.image('background', 'images/background.png');
     game.load.image('mainCharacter', 'images/megaman.png');
     game.load.image('bala', 'images/bala.png');
