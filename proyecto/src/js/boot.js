@@ -3,10 +3,10 @@ var Boot = Boot || {};
 Boot = {
   preload: function() {
     clicBoton: '',
-    YoungMan.load.image('pantallaInicialFondo', 'images/fondoPantallaInicial.jpg');
-    YoungMan.load.spritesheet('pantallaInicialBotones', 'sprites/botonesPantallaInicial.png', 201, 71.666666666);
-    YoungMan.load.audio('pantallaInicialMusica', audio/pantallaInicialMusica);
-    YoungMan.load.audio('pantallaInicialClic', audio/pantallaInicialClic);
+    YoungMan.load.image('pantallaInicialFondo', 'images/pantallaInicialFondo.jpg');
+    YoungMan.load.spritesheet('pantallaInicialBotones', 'sprites/pantallaInicialBotones.png', 201, 71.666666666);
+    YoungMan.load.audio('pantallaInicialMusica', 'audio/pantallaInicialMusica');
+    YoungMan.load.audio('pantallaInicialClic', 'audio/pantallaInicialClic');
   },
   create: function() {
     YoungMan.add.sprite(0, 0, 'pantallaInicialFondo');
