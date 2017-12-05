@@ -1,27 +1,18 @@
 <!doctype html>
 <html>
 <head>
+  <meta charset="utf-8"/>
   <title>YoungMan</title>
-  <meta charset="utf-8">
-
-  <link href="styles.css" rel="stylesheet" type="text/css">
-  <style>
-  #game {
-    width: 800px;
-    height: 600px;
-  }
-  </style>
+  <script type="text/javascript" src="js/phaser.min.js"></script>
+  <script type="text/javascript" src="js/boot.js"></script>
 </head>
+
 <body>
-  <header>
+  <script type="text/javascript">
+  var YoungMan = new Phaser.Game(1920, 1080, Phaser.Auto, 'YoungMan');
 
-  <main>
-    <iframe id="game" src="raw.html"></iframe>
-  </main>
-
-  <footer>
-    <p><strong>YoungMan</strong><br>
-      by <a href="http://github.com/aareonr">Tauro Games</a></p>
-  </footer>
+  YoungMan.state.add('Boot', Boot, true);
+  YoungMan.state.start('Boot');
+  </script>
 </body>
 </html>
