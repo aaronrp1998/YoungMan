@@ -2,7 +2,6 @@ var Boot = Boot || {};
 
 Boot = {
   preload: function() {
-    clicBoton: '',
     YoungMan.load.image('pantallaInicialFondo', 'images/pantallaInicialFondo.jpg');
     YoungMan.load.image('pantallaInicialBotones', 'sprites/pantallaInicialBotones.png');
     YoungMan.load.audio('pantallaInicialMusica', 'audio/pantallaInicialMusica.mp3');
