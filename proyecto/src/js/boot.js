@@ -13,10 +13,9 @@ Boot = {
     var musica = YoungMan.add.audio('pantallaInicialMusica');
     musica.play('', 0, 0.5, true);
     this.clicBoton = YoungMan.add.audio('pantallaInicialClic');
-    YoungMan.add.button(960, 540, 'pantallaInicialBotones', this.iniciar, this, 1, 2, 1);
+    YoungMan.add.button(960, 540, 'pantallaInicialBotones', this.iniciar, this);
   },
   iniciar: function(){
-    this.clicBoton.play();
     console.log('Inicia videojuego');
   }
 }
