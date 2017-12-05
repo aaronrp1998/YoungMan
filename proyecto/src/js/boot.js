@@ -13,7 +13,7 @@ Boot = {
     var musica = YoungMan.add.audio('pantallaInicialMusica');
     musica.play('', 0, 0.5, true);
     this.clicBoton = YoungMan.add.audio('pantallaInicialClic');
-    YoungMan.add.button(960, 540, 'pantallaInicialBotones', this.iniciar, this, 0, 1, 2);
+    YoungMan.add.button(960, 540, 'pantallaInicialBotones', this.iniciar, this, 0, 2, 1);
   },
   iniciar: function(){
     this.clicBoton.play();
