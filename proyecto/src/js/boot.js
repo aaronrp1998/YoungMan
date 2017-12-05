@@ -16,6 +16,7 @@ Boot = {
     YoungMan.add.button(960, 540, 'pantallaInicialBotones', this.iniciar, this);
   },
   iniciar: function(){
+    YoungMan.state.end('Boot');
     YoungMan.state.start('MainScene');
     console.log('Inicia videojuego');
   }
