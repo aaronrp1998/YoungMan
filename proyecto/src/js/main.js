@@ -10,15 +10,15 @@ Main = {
   },
 
   create: function() {
-    YoungMan.physics.startSystem(Phaser.Physics.ARCADE);
-    YoungMan.physics.arcade.enable(mainCharacter);
     background = YoungMan.add.sprite(0, -10, 'background');
     mainCharacter = YoungMan.add.sprite(YoungMan.world.centerX, 410, 'mainCharacter');
+    YoungMan.physics.startSystem(Phaser.Physics.ARCADE);
+    YoungMan.physics.arcade.enable('mainCharacter');
     //map = YoungMan.add.tilemap('tilemap');
     //map.addTilesetImage("patron1", "patron1Tilemap");
     //map.addTilesetImage("patron2", "patron2Tilemap");
   },
-  
+
   update: function() {
     if (YoungMan.input.keyboard.isDown(39))
         YoungMan.physics.arcade.moveToXY(mainCharacter, 700, mainCharacter.position.y, 200);
