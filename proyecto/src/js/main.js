@@ -2,8 +2,6 @@ var Main = Main || {};
 
 Main = {
   function preload() {
-    game.load.baseURL = 'https://aaronrp1998.github.io/YoungMan/proyecto/src/'
-    game.load.crossOrigin = 'anonymus';
     game.load.image('background', 'images/background.jpg');
     game.load.image('mainCharacter', 'images/Megaman.png');
     game.load.tilemap('tilemap', 'images/tilemap.json', null, Phaser.Tilemap.TILED_JSOM);
