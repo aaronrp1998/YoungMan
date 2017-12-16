@@ -4,14 +4,14 @@
   <meta charset="utf-8"/>
   <title>YoungMan</title>
   <script type="text/javascript" src="js/lib/phaser.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/boot.js"></script>
 </head>
 
 <body>
   <script type="text/javascript">
   var YoungMan = new Phaser.Game(1920, 1080, Phaser.Auto, 'YoungMan');
 
-  YoungMan.state.add('main', Main, true);
+  YoungMan.state.add('main', Boot, true);
   YoungMan.state.start('main');
 
   </script>
